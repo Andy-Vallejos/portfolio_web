@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 200vh;
+    background: rgba(0, 0, 0, 0.803);
+    color: white;
+    z-index: 10;
+}
+
+h1{
+    font-size: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+span{
+    color: rgb(169, 145, 9);
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    padding: 20px
+}
+
+nav h2{
+    font-size: 3    0px;
+    color: rgb(169, 145, 9);
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+header section{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header button {
+    border: none;
+    background: rgb(169, 145, 9);
+    margin: 20px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(169, 145, 9, 0.497);
+    animation: sacudir 0.5s infinite alternate delay;
+}
+
+@keyframes sacudir {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+.diseño1{
+    background: rgb(169, 145, 9);
+    top: 50%;
+    right: 20%;
+    border-radius: 100%;
+    z-index: 10;
+    position: absolute;
+    animation: titilar 5s infinite alternate both;
+    box-shadow: 0 0 1000px 150px rgba(169, 145, 9); 
+}
+
+
+@keyframes titilar {
+    100% {
+        box-shadow: 0 0 1000px 140px rgba(169, 145, 9); ;
+    }
+}
+
+
+.mode i{
+    
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    font-size: 40px;
+}
+
+.mode i:hover{
+    color: rgb(169, 145, 9);
+}
+
+
+.diseño2:hover{
+    background: rgb(34, 34, 35);
+}
+
+.iconos{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    gap: 10px;
+}
+
+.iconos i{
+    font-size: 20px;
+}
+
+.iconos i:hover{
+    cursor: pointer;
+    color:rgb(169, 145, 9);
+}
+
+
+
+.about{
+    padding: 30px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.about .imagen{
+    width: 50%;
+    height: 100px;
+}
+.skills{
+    width: 100%;
+    height: 50vh;
+    padding: 30px;
+    font-size: 100px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.988);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.592);
+    backdrop-filter: blur(100px);
+    position: relative;
+    color: rgb(169, 145, 9);
+
+
+}
+
+.diseño2{
+    background: rgb(169, 145, 9);
+    top: 10%;
+    left: 10%;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -10;
+    box-shadow: 0 0 1000px 70px rgb(163, 115, 3); 
+}
